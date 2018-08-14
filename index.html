@@ -208,9 +208,35 @@
 <!--  <a href='http://www.freevisitorcounters.com'>number of visitor</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=257330905474d8070a199281a78dbe3b1edec06a'></script>
 <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/401247/t/1"></script> -->
 	
-	$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
-  console.log(JSON.stringify(data, null, 2));
-});
+	
+	
+	 <head>
+      <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="content"></div>
+
+		<script>
+		$(document).ready(function() {
+			myData = {} ;  // just to be able to introspect the data on the console (global var)
+			$.getJSON('list.json', function(data)
+				{
+					console.log(data);
+					myData = data;  // dito
+					for(var i in data.users) {
+						item = data.users[i];
+				        // $("#content").append(item)
+				        $("<div/>", {
+				            id: i,
+				            text: item,
+				            onClick: "console.log('you clicked "+item+"')"
+				        }).appendTo("#content");
+					}
+				});
+		});
+		</script>
+    </body>
 	
 
 </div>
