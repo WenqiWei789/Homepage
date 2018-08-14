@@ -205,8 +205,12 @@
 </table>
 
 	
- <a href='http://www.freevisitorcounters.com'>number of visitor</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=257330905474d8070a199281a78dbe3b1edec06a'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/401247/t/1"></script>
+<!--  <a href='http://www.freevisitorcounters.com'>number of visitor</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=257330905474d8070a199281a78dbe3b1edec06a'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/401247/t/1"></script> -->
+	
+	$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+});
 	
 
 </div>
