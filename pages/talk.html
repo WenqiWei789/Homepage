@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seminars and invited talks">
+  <title>Dr. Wenqi Wei - Seminars and Talks</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html">Home</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a class="active" href="talk.html">Seminars and Talks</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="students.html">Supervised Students</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page services-page">
+    <section class="services-layout services-layout-full">
+      <section class="services-column" aria-labelledby="talks-heading">
+        <h1 id="talks-heading">Seminars and Talks</h1>
+
+        <section class="service-section" aria-labelledby="invited-heading">
+          <h3 id="invited-heading">Invited Talks</h3>
+          <ul>
+            <li><span class="badge bg-success">2026</span> Trustworthy AI Systems: Privacy, Robustness, and Governance. Fordham University Research Seminar.</li>
+            <li><span class="badge bg-success">2025</span> Security and Privacy Challenges in Large Language Model Applications. IBM Research Seminar.</li>
+            <li><span class="badge bg-success">2025</span> Robust and Responsible Data Analysis for Intelligent Systems. Data Science and AI Seminar Series.</li>
+            <li><span class="badge bg-success">2024</span> Privacy-Preserving Learning in Distributed AI Systems. Cybersecurity Seminar.</li>
+            <li><span class="badge bg-success">2024</span> Trustworthy Distributed AI: From Gradient Leakage to Robust Ensembles. Academic Research Colloquium.</li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="conference-heading">
+          <h3 id="conference-heading">Conference Presentations</h3>
+          <ul>
+            <li><span class="badge bg-success">ICML 2026</span> Scaling Laws in Model Fine-tuning for Audio DeepFake Detection.</li>
+            <li><span class="badge bg-success">ACL 2026</span> Reasoning over Precedents Alongside Statutes: Case-Augmented Deliberative Alignment for LLM Safety.</li>
+            <li><span class="badge bg-success">ICIS 2025</span> Software Generation with LLMs: Privacy, Utility, and Cybersecurity Tensions.</li>
+            <li><span class="badge bg-success">ESORICS 2025</span> On the Adversarial Robustness of Graph Neural Networks with Graph Reduction.</li>
+            <li><span class="badge bg-success">IJCAI 2024</span> Imperio: Language-Guided Backdoor Attacks for Arbitrary Model Control.</li>
+            <li><span class="badge bg-success">TheWebConf 2024</span> Efficient Training of Language Models for Ethereum Fraud Detection.</li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="panels-heading">
+          <h3 id="panels-heading">Panels and Tutorials</h3>
+          <ul class="compact-list">
+            <li><span class="badge bg-success">2026</span> Panel on AI Security, Privacy, and Responsible Deployment.</li>
+            <li><span class="badge bg-success">2025</span> Tutorial on Trustworthy Machine Learning for Data-Intensive Systems.</li>
+            <li><span class="badge bg-success">2024</span> Panel on LLMs, Data Governance, and Cybersecurity.</li>
+            <li><span class="badge bg-success">2023</span> Tutorial on Privacy Risks in Federated and Distributed Learning.</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
