@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Teaching activities">
+  <title>Dr. Wenqi Wei - Teaching</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html">Home</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a class="active" href="teaching.html">Teaching</a></li>
+        <li><a href="talk.html">Seminars and Talks</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a href="students.html">Supervised Students</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page services-page">
+    <section class="services-layout services-layout-full">
+      <section class="services-column" aria-labelledby="teaching-heading">
+        <h1 id="teaching-heading">Teaching</h1>
+
+        <section class="service-section" aria-labelledby="fordham-heading">
+          <h3 id="fordham-heading">Courses at Fordham University</h3>
+          <ul>
+            <li>CISC 1600 / 1610: Programming with C++ and Lab <span class="role">Undergraduate</span></li>
+            <li>CISC 2100 / 2110: Discrete Structures II and Lab <span class="role">Undergraduate</span></li>
+            <li>CISC 3600: Secure Cyber Networks <span class="role">Undergraduate</span></li>
+            <li>CISC 5380: Programming with Python <span class="role">Graduate</span></li>
+            <li>CISC 5650: Cybersecurity Essentials <span class="role">Graduate</span></li>
+            <li>CISC 5800: Machine Learning <span class="role">Graduate</span></li>
+            <li>CISC 5835: Algorithms for Data Science <span class="role">Graduate</span></li>
+            <li>CISC 6670: AI for Cybersecurity <span class="role">Graduate</span></li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="ta-heading">
+          <h3 id="ta-heading">Past Teaching Assistant Experience</h3>
+          <ul class="compact-list">
+            <li>Machine Learning</li>
+            <li>Optimal Control Theory</li>
+            <li>System Optimization Methods</li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="mentoring-heading">
+          <h3 id="mentoring-heading">Student Mentoring</h3>
+          <ul>
+            <li>I welcome students interested in trustworthy AI, privacy-preserving data analysis, security for intelligent systems, and responsible data management.</li>
+            <li>Students are encouraged to contact me with a short description of their research interests and relevant background.</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
