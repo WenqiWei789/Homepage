@@ -87,10 +87,10 @@
 <li><span class="label label-success">Workshop recruitment</span> <b> I will serve as the workshop co-chair for <a href="http://www.sis.pitt.edu/lersais/conference/cic/2024/">IEEE CIC/TPS/CogMI 2024</a>. Workshop proposals are welcome! </b></li> -->
              <!--<li><span class="label label-success">Mar 2025</span> Thanks to the NSF OAC program for supporting our MRI proposal ($397,299, Co-PI).</li>-->
 <!-- <li><span class="label label-success">Nov 2026</span> I will be on sabbatical in Spring 2027 and will be a visiting researcher at UT Austin’s McCombs School of Business.</li> -->
-<li><span class="label badge bg-success">May 2026</span> I am honored to receive the 2026 IEEE Big Data Security Junior Research Award.</li> 
-<li><span class="label badge bg-success">Apr 2026</span> Our paper "Scaling Laws in Model Fine-tuning for Audio DeepFake Detection" has been accepted to <b>ICML 2026</b>.</li>
-<li><span class="label badge bg-success">Apr 2026</span> I am honored to receive the Distinguished Research Award for Junior Faculty at Fordham University.</li>
-<li><span class="label badge bg-success">Apr 2026</span> One paper on self-reasoning for LLM alignment has been accepted to <b>ACL 2026</b>.</li>
+<li><span class="badge bg-success">May 2026</span> I am honored to receive the 2026 IEEE Big Data Security Junior Research Award.</li> 
+<li><span class="badge bg-success">Apr 2026</span> Our paper "Scaling Laws in Model Fine-tuning for Audio DeepFake Detection" has been accepted to <b>ICML 2026</b>.</li>
+<li><span class="badge bg-success">Apr 2026</span> I am honored to receive the Distinguished Research Award for Junior Faculty at Fordham University.</li>
+<li><span class="badge bg-success">Apr 2026</span> One paper on self-reasoning for LLM alignment has been accepted to <b>ACL 2026</b>.</li>
 <li><span class="label badge bg-success">Feb 2026</span> Our paper on using LLM for financial statement fraud detection has been accepted to <b>ACM TOIT</b>.</li>
 <li><span class="label badge bg-success">Feb 2026</span> Our paper "GradCloak: Gradient Obfuscation for Privacy-Preserving Distributed Learning as a Service" has been accepted to <b>IEEE Trans. Services Computing</b>.</li>
 <li><span class="label badge bg-success">Dec 2025</span> Our ICIS25 paper received Best Student Paper nomination. We thank the organizers for recognition.</li>
@@ -218,6 +218,41 @@
       </section>
     </section>
   </main>
+
+  <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=nhXr53cplJvMh6kfz7U583oPqd2tnJ_VXqMonENCoBE&cl=ffffff&w=300"></script> 
+
+		</td>
+	
+	</tr>
+</tbody></table>	
+	
+	
+
+	
+      <meta charset="utf-8">
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+  
+        <div id="content"></div>
+
+		<script>
+		$(document).ready(function() {
+			myData = {} ;  // just to be able to introspect the data on the console (global var)
+			$.getJSON('list.json', function(data)
+				{
+					console.log(data);
+					myData = data;  // dito
+					for(var i in data.users) {
+						item = data.users[i];
+				        // $("#content").append(item)
+				        $("<div/>", {
+				            id: i,
+				            text: item,
+				            onClick: "console.log('you clicked "+item+"')"
+				        }).appendTo("#content");
+					}
+				});
+		});
+		</script>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');
