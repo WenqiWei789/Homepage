@@ -323,3 +323,107 @@ li {
 }
 
 
+.publications-page {
+  max-width: 1170px;
+}
+
+.profile-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 12px;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  min-height: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.profile-link:hover,
+.profile-link:focus {
+  border-color: #adadad;
+  background: #f5f5f5;
+  color: #23527c;
+  text-decoration: none;
+}
+
+.scholar-link {
+  color: #4285f4;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.dblp-link {
+  min-width: 64px;
+  color: #003366;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+
+.publication-section {
+  margin-top: 18px;
+}
+
+.publication-section h3 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.publication-section h4 {
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.publication-section ol {
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+.publication-section li {
+  margin-bottom: 7px;
+}
+
+.services-layout {
+  grid-template-columns: 75% 25%;
+}
+
+.services-layout-full {
+  grid-template-columns: 1fr;
+}
+
+.services-column {
+  min-width: 0;
+  padding: 0 15px;
+}
+
+.service-section {
+  margin-top: 18px;
+}
+
+.service-section h3 {
+  margin-top: 0;
+}
+
+.service-section ul {
+  margin-bottom: 20px;
+}
+
+.service-section li {
+  margin-bottom: 8px;
+}
+
+.compact-list li {
+  margin-bottom: 5px;
+}
+
+
+
