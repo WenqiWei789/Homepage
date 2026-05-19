@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic homepage template">
+  <title>Dr. Alex Morgan - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Home</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#students">Supervised Students</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page">
+    <section class="intro-row">
+      <div class="portrait-column">
+        <img class="portrait" src="assets/portrait.svg" alt="Portrait of Dr. Alex Morgan">
+      </div>
+      <div class="bio-column">
+        <h1>Dr. Alex Morgan</h1>
+        <h5>Professor of Computer Science, Institute of Technology</h5>
+        <p><strong>Dr. Alex Morgan</strong> is a professor in the Department of Computer Science at the Institute of Technology. Their work focuses on dependable digital systems, process intelligence, cloud services, and human-centered software engineering.</p>
+        <p>Before joining the institute, Alex worked with international research groups on distributed systems and data-driven service platforms. They received an M.S. and Ph.D. in computer science and have collaborated with academic, public-sector, and industry partners across Europe and North America.</p>
+        <p>Current research interests include Business Process Management, Process Mining, Service-Oriented Computing, and trustworthy AI for complex organizations. Alex has published widely in these areas and regularly serves as a program committee member, reviewer, and project coordinator.</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="content-row">
+      <aside class="side-column">
+        <div class="panel">
+          <h2>Contact</h2>
+          <p>
+            Dr. Alex Morgan<br>
+            Institute of Technology, Computer Science Department<br>
+            Office 4A 310<br>
+            19 Research Avenue<br>
+            91120 Innovation City<br>
+            email: alex.morgan (-at-) example.edu<br>
+            tel: +1.555.014.3030
+          </p>
+          <a class="btn" href="https://maps.google.com" target="_blank" rel="noreferrer">Map</a>
+        </div>
+
+        <div class="panel">
+          <h2>External Links</h2>
+          <ul>
+            <li><a href="#"><strong>Institute</strong></a> engineering school and research campus.</li>
+            <li><a href="#"><strong>Systems Lab</strong></a> research laboratory.</li>
+            <li><a href="#"><strong>Process Group</strong></a> research team.</li>
+            <li><a href="#"><strong>Computer Science</strong></a> department.</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="news-column" aria-labelledby="news-heading">
+        <h2 id="news-heading">News</h2>
+
+        <div class="news-group">
+          <h4>Current Events</h4>
+          <ul>
+            <li>
+              ICWS 2026: IEEE International Conference on Web Services
+              <i>13-18 July 2026, Sydney, Australia.</i>
+              <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Website</a>
+              <span class="role">Program co-chair</span>
+            </li>
+            <li>
+              CoopIS 2026: International Conference on Cooperative Information Systems,
+              <i>26-28 November 2026, Angers, France.</i>
+              <a class="btn btn-small" href="#" target="_blank" rel="noreferrer">Website</a>
+              <span class="role">Steering committee member</span>
+            </li>
+            <li class="book-item">
+              <div>
+                <strong>Foundations of Business Process Management.</strong>
+                A new teaching edition is now available, bringing core ideas in modeling, analysis, automation, and process improvement to a wider professional audience.
+              </div>
+              <img src="assets/book-cover.svg" alt="Book cover">
+            </li>
+          </ul>
+        </div>
+
+        <div class="news-group">
+          <h4>Previous Events</h4>
+          <ul>
+            <li>ICWS 2025: IEEE International Conference on Web Services <i>July 7-12, Helsinki, Finland.</i> <a class="btn btn-small" href="#">Website</a> <span class="role">Program co-chair</span></li>
+            <li>ICSOC 2024: International Conference on Service-Oriented Computing <i>December 3-6, Tunis, Tunisia.</i> <a class="btn btn-small" href="#">Website</a> <span class="role">Program co-chair</span></li>
+            <li>CoopIS 2024: International Conference on Cooperative Information Systems <i>November 19-21, Porto, Portugal.</i> <a class="btn btn-small" href="#">Website</a> <span class="role">Steering committee member</span></li>
+            <li>Process Mining Forum 2023 <i>October 30-November 3, Groningen, The Netherlands.</i> <a class="btn btn-small" href="#">Website</a> <span class="role">General chair</span></li>
+            <li>Service Computing Workshops 2022 <i>September 13-15, Munster, Germany.</i> <a class="btn btn-small" href="#">Website</a> <span class="role">Workshop chair</span></li>
+            <li>International Colloquium on Theoretical Aspects of Computing <i>October 31-November 4, Hammamet, Tunisia.</i> <a class="btn btn-small" href="#">Website</a> <span class="role">General chair</span></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
