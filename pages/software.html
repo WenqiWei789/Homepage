@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Software and research tools">
+  <title>Dr. Wenqi Wei - Software</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html">Home</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="talk.html">Seminars and Talks</a></li>
+        <li><a class="active" href="software.html">Software</a></li>
+        <li><a href="students.html">Supervised Students</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page services-page">
+    <section class="services-layout services-layout-full">
+      <section class="services-column" aria-labelledby="software-heading">
+        <h1 id="software-heading">Software</h1>
+
+        <section class="service-section" aria-labelledby="ai-security-heading">
+          <h3 id="ai-security-heading">Trustworthy AI and Security Tools</h3>
+          <ul>
+            <li><a href="#" target="_blank" rel="noreferrer">Gradient Leakage Analysis Toolkit</a> <span class="badge bg-success">Research Code</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Distributed Learning Privacy Evaluation Framework</a> <span class="badge bg-success">Research Code</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Adversarial Robustness Benchmark for Ensemble Models</a> <span class="badge bg-success">Benchmark</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">LLM Security and Privacy Risk Scanner</a> <span class="badge bg-success">Prototype</span></li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="data-systems-heading">
+          <h3 id="data-systems-heading">Data Management and Analytics Tools</h3>
+          <ul>
+            <li><a href="#" target="_blank" rel="noreferrer">Financial Statement Fraud Detection Pipeline</a> <span class="badge bg-success">Prototype</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Graph-Based Anomaly Detection for Microservices</a> <span class="badge bg-success">Research Code</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Ethereum Fraud Detection with Language Models</a> <span class="badge bg-success">Dataset/Code</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Responsible Data Analysis Utilities</a> <span class="badge bg-success">Toolkit</span></li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="learning-heading">
+          <h3 id="learning-heading">Machine Learning Systems Tools</h3>
+          <ul>
+            <li><a href="#" target="_blank" rel="noreferrer">Deep Ensemble Diversity Evaluation Toolkit</a> <span class="badge bg-success">Research Code</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Federated Learning Experiment Manager</a> <span class="badge bg-success">Prototype</span></li>
+            <li><a href="#" target="_blank" rel="noreferrer">Audio Deepfake Detection Evaluation Scripts</a> <span class="badge bg-success">Benchmark</span></li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
