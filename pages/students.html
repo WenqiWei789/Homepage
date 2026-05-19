@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Supervised students and research group">
+  <title>Dr. Wenqi Wei - Supervised Students</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Primary navigation">
+    <div class="container nav-inner">
+      <a class="brand" href="../index.html">Home</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="talk.html">Seminars and Talks</a></li>
+        <li><a href="software.html">Software</a></li>
+        <li><a class="active" href="students.html">Supervised Students</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page services-page">
+    <section class="services-layout services-layout-full">
+      <section class="services-column" aria-labelledby="students-heading">
+        <h1 id="students-heading">Supervised Students</h1>
+
+        <section class="service-section" aria-labelledby="current-heading">
+          <h3 id="current-heading">Current Students</h3>
+          <ul>
+            <li><span class="badge bg-success">Ph.D.</span> Student Name, trustworthy AI and privacy-preserving learning.</li>
+            <li><span class="badge bg-success">Ph.D.</span> Student Name, security and robustness for large language model applications.</li>
+            <li><span class="badge bg-success">M.S.</span> Student Name, graph learning for anomaly detection and financial data analysis.</li>
+            <li><span class="badge bg-success">Undergrad</span> Student Name, responsible data analysis and applied machine learning.</li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="alumni-heading">
+          <h3 id="alumni-heading">Alumni</h3>
+          <ul>
+            <li><span class="badge bg-success">2025</span> Student Name, M.S. research project on privacy risks in distributed learning.</li>
+            <li><span class="badge bg-success">2024</span> Student Name, undergraduate research on robust machine learning systems.</li>
+            <li><span class="badge bg-success">2023</span> Student Name, research assistant on trustworthy data analytics.</li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="visitors-heading">
+          <h3 id="visitors-heading">Visiting Students and Collaborators</h3>
+          <ul class="compact-list">
+            <li><span class="badge bg-success">Visitor</span> Student Name, collaborative research on AI security.</li>
+            <li><span class="badge bg-success">Visitor</span> Student Name, collaborative research on responsible data management.</li>
+          </ul>
+        </section>
+
+        <section class="service-section" aria-labelledby="opportunities-heading">
+          <h3 id="opportunities-heading">Openings</h3>
+          <ul>
+            <li>I am always looking for self-motivated students interested in trustworthy AI, data privacy, cybersecurity, and intelligent data management.</li>
+            <li>Prospective students are encouraged to send a CV, transcript, and a short description of research interests by email.</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  </script>
+</body>
+</html>
